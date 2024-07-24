@@ -1,0 +1,130 @@
+:root {
+  --bg-primary: black;
+  --bg-secondary: #001005;
+  --txt-clr: white;
+  --main-clr: #00ff51;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 1rem 5%; 
+  background: #0000004d;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2000;
+}
+
+.dropboxMenu {
+  font-size: 3.6rem;
+  color: var(--main-clr);
+  display: none;
+  cursor: pointer;
+}
+
+.name {
+  font-size: 300%;
+  color: var(--txt-clr);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.name:hover {
+  transform: scale(1.1);
+}
+
+.name span {
+  color: var(--main-clr);
+}
+
+.navbar ul {
+  font-size: 200%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: height 0.3s ease;
+}
+
+.navbar ul a {
+  color: var(--txt-clr);
+  margin-left: 2rem; /* Adjusted margin */
+  text-transform: uppercase;
+  border-bottom: 3px solid transparent;
+  transition: 0.5s ease;
+}
+
+.navbar ul a:hover {
+  color: var(--main-clr);
+  letter-spacing: 2px;
+  border-bottom: 3px solid var(--main-clr);
+}
+
+@media (max-width: 1000px) {
+  .navbar {
+    padding: 1rem 5%;
+  }
+  .navbar ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    transition: 0.3s ease;
+    width: 100%; /* Ensure it takes the full width */
+    background: #0000004d;
+    align-items: flex-end;
+  }
+  .name {
+    font-size: 2.5rem;
+  }
+  .navbar ul.show {
+    display: flex;
+    padding: 0;
+    transition: 0.3s ease;
+    padding-right: 4%;
+    padding-top: 3%;
+    height: auto;
+  }
+  #menu-icon {
+    font-size: 2.5rem;
+  }
+  .navbar ul a {
+    margin-right: 1rem;
+    margin-bottom: 0%;
+    gap:5%;
+    text-align: center;
+    padding: 1rem 0;
+    
+  }
+  .navbar ul a:hover {
+    color: var(--main-clr);
+    letter-spacing: 2px;
+    border-bottom: none;
+  }
+  .dropboxMenu {
+    display: block; 
+  }
+}

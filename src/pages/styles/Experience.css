@@ -1,0 +1,113 @@
+.experience{
+    background: linear-gradient(black,#001005,#00200a ,#001005,black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.cardsofexp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.expCard{
+    width: 55%;
+    margin:20px;
+    padding: 4%;
+    background: rgba(255, 255, 255, 0.144);
+    border-radius: 30px;
+    transition: 0.3s ease;
+    overflow: hidden;
+    color: white;
+}
+.expCard:hover{
+    background: linear-gradient(60deg, #001005,#003a12, #00be3c,#00be3c,#003a12, #001005);
+    animation: gradientAnimation 30s ease infinite;
+    background-size: 600% 600%;
+    box-shadow: 0 0 35px var(--main-clr);
+}
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 0%;
+    }
+    25% {
+      background-position: 100% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    75% {
+      background-position: 0% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+
+
+.headContent{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+.date{
+    margin-top: 5%;
+    font-size: 250%;
+    margin-bottom: 5%;
+}
+.jobTitle{
+    font-size: 300%;
+    font-style: italic;
+}
+.companyName{
+    font-size: 350%;
+    text-transform: uppercase;
+}
+.desc{
+    font-size: 260%;
+    margin-top: 2.5%;
+}
+
+  @media (max-width:1000px){
+    .experience{
+        background: linear-gradient(black,#001005,#00200a ,#001005,black);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 100%;
+    }
+    .expCard{
+        margin-bottom: 5%;
+        border-radius: 30px;
+        transition: 0.3s;
+        width:92%;
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+    }
+    .headContent{
+        display: flex;
+        flex-direction: column;
+        border-bottom: 2px solid black;
+    }
+    .date{
+        margin-top: 3%;
+        font-size: 150%;
+        margin-bottom: 5%;
+    }
+    .jobTitle{
+        margin-top: 5%;
+        font-size: 200%;
+        font-style: italic;
+    }
+    .companyName{
+        font-size: 360%;
+        text-transform: uppercase;
+    }
+    .desc{
+        font-size: 160%;
+        margin-top: 2.5%;
+    }
+  }

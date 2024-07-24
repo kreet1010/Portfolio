@@ -1,0 +1,114 @@
+.crack{
+    background:url(../assets/Images/activity.jpg);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    width: 100%;
+}
+.wordShuffeler  {
+    display: flex;
+    gap: 8rem;
+    align-items: center;
+    background: transparent;
+    color: var(--main-clr);
+    padding-top: 7%;
+    padding-bottom: 7%;;
+    font-size: 360%;
+    font-family: "Space Mono",monospace;
+    margin-left: 5rem;
+    height: auto;
+    width: 300px;
+}
+
+.funnytexts{
+    color: var(--txt-clr);
+    width: 40%;
+}
+.funnytexts span{
+    color: var(--main-clr);
+    text-indent:3rem;
+}
+@media (max-width: 2200px) {
+    .crack{
+        background:url(../assets/Images/activity.jpg);
+        display: flex;
+        margin-top: 5px;
+        width:100%;
+    }
+    .wordShuffeler  {
+        display: flex;
+        align-items: center;
+        background: transparent;
+        color: var(--main-clr);
+        padding-top: 7%;
+        padding-bottom: 4%;;
+        font-size: 260%;
+        letter-spacing: 2px;
+        font-family: "Space Mono",monospace;
+        margin-left: 5rem;
+        height: 650px;
+    }
+    .crackingVisuals{
+        width:100%;
+        font-size: 160%;
+        margin-left: 10% ;
+    }
+    .funnytexts{
+        color: var(--txt-clr);
+        width: 70%;
+    }
+    .funnytexts span{
+        color: var(--main-clr);
+    }
+}
+@media(max-width:1600px){
+    .wordShuffeler{
+        gap: 2px;
+    }
+    .funnytexts{
+        font-size: 170%;
+        width:290px;
+    }
+    .crackingVisuals{
+        font-size: 80%;
+    }
+}
+@media(max-width:1000px){
+    .crack{
+        background:url(../assets/Images/activity.jpg);
+        display: flex;
+        margin-top: 5px;
+        width:100%;
+    }
+    .wordShuffeler  {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+        background: transparent;
+        color: var(--main-clr);
+        padding-top: 7%;
+        padding-bottom: 4%;;
+        letter-spacing: 2px;
+        font-family: "Space Mono",monospace;
+        height: 450px;
+    }
+    .crackingVisuals{
+        width:100%;
+        font-size: 90%;
+        margin-left: 0%;
+    }
+    .funnytexts{
+        color: var(--txt-clr);
+        width: 100%;
+        font-size: 200%;
+    }
+    .funnytexts span{
+        color: var(--main-clr);
+        width:100%;
+        
+    }
+}
