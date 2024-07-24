@@ -10,10 +10,10 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <a href="#home" className="name">Kreet<span>Rout</span></a>
+      <a href="#Home" className="name">Kreet<span>Rout</span></a>
       <i className="dropboxMenu" id="menu-icon" onClick={toggleMenu}>☰</i>
       <ul id="nav-links" className={isMenuOpen ? 'show' : ''}>
-        <li className="list"><a href="#">Home</a></li>
+        <li className="list"><a href="#Home">Home</a></li>
         <li className="list"><a href="#projects">Projects</a></li>
         <li className="list"><a href="#experience">Experience</a></li>
         <li className="list"><a href="#skills">Proficiency</a></li>
