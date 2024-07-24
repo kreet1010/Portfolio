@@ -1,9 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../styles/Projects.css';
 import Carousel from './EmblaCarousel.jsx';
-import Imposter from '../assets/Images/Imposter.jpg';
-import Jerry from '../assets/Images/JerryTheRAT.jpg';
-import spy from '../assets/Images/RequestSPY.jpg';
 
 
 const Projects = () => {
