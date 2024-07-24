@@ -4,7 +4,7 @@ import Landing from './pages/Landing';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/portfolio/">
       <Routes>
         <Route path="/Home" element={<Landing />} />
         <Route path="/" element={<Navigate to="/Home" replace />} />
